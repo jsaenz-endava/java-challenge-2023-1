@@ -1,4 +1,12 @@
 public class Product {
+    // Esto podría ser una interfaz
+//    public interface ProductCategory {
+//        String getName();
+//        String getCategory();
+//        double getPrice();
+//        String getDescription();
+//        Product getProduct(int choice, int quantity);
+//    }
     private String name;
     private double price;
     private String description;

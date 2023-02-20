@@ -30,7 +30,7 @@ public class TabletProduct extends Product {
 
     public String displayProducts() {
         StringBuilder builder = new StringBuilder();
-        builder.append("Smartphone products:\n");
+        builder.append("Tablet products:\n");
         for (Product product : products) {
             builder.append(product.displayProducts()).append("\n");
         }
