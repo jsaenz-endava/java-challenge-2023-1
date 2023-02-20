@@ -1,4 +1,4 @@
-abstract class Product {
+public class Product {
     private String name;
     private double price;
     private String description;
@@ -33,13 +33,21 @@ abstract class Product {
         return quantity;
     }
 
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
     public String toString() {
         return name + " (" + category + "): $" + price + " x " + quantity + " = $" + price * quantity + " - " + description;
     }
 
-    public abstract String displayProducts();
+    public String displayProducts(){
+        return "This product is not available";
+    };
 
-    public abstract Product getProduct(int choice, int quantity);
+    public Product getProduct(int choice, int quantity){
+        return new Product(this.name, this.price, this.description, this.category, quantity);
+    }
 }
 
 
