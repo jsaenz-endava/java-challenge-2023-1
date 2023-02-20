@@ -35,7 +35,13 @@ public class Store {
         switch (option) {
             case "1" -> showProducts();
             case "2" -> {
-                shoppingCart.showShoppingCart();
+                if(shoppingCart.getTotal() != 0){
+                    shoppingCart.showShoppingCart();
+                    showDeleteItems();
+                }
+                else{
+                    System.out.println("Shopping cart is empty, please add an item!");
+                }
                 showPrincipalMenu();
             }
             case "3" -> System.out.println("Thanks for visiting, come back soon!");
@@ -131,6 +137,26 @@ public class Store {
         switch (option) {
             case "1" -> showProducts();
             case "2" -> showPrincipalMenu();
+            default -> {
+                System.out.println("Invalid option, please select a valid option!");
+                showPrincipalMenu();
+            }
+        }
+    }
+
+    private void showDeleteItems(){
+        System.out.println("\nDo you want remove items from the shopping cart?\n");
+        System.out.println("1. Yes");
+        System.out.println("2. No");
+        System.out.println("3. Exit from our store");
+
+        Scanner input = new Scanner(System.in);
+        String option = input.nextLine();
+
+        switch (option) {
+            case "1" -> shoppingCart.deleteCartItems();
+            case "2" -> showPrincipalMenu();
+            case "3" -> System.out.println("Thanks for visiting, come back soon!");
             default -> {
                 System.out.println("Invalid option, please select a valid option!");
                 showPrincipalMenu();
