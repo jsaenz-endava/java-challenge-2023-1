@@ -47,8 +47,8 @@ public class DeviceEnvironmentPurchase {
                 cart.add(product);
             }
         } else if (category == 3) {
-            SmartphoneProduct tvAccessory = new SmartphoneProduct();
-            System.out.println(tvAccessory.displayProducts());
+            SmartTvProduct tvAccessory = new SmartTvProduct();
+            System.out.println( tvAccessory.displayProducts());
             int tvAccessoryChoice = scanner.nextInt();
             if (tvAccessoryChoice == 1) {
                 System.out.println("Enter the quantity:");
@@ -56,12 +56,12 @@ public class DeviceEnvironmentPurchase {
                 Product product = tvAccessory.getProduct(1, quantity);
                 cart.add(product);
             }
-//            else if (tvAccessoryChoice == 2) {
-//                System.out.println("Enter the quantity:");
-//                int quantity = scanner.nextInt();
-//                Product product = tvAccessory.getProduct(2, quantity);
-//                cart.add(product);
-//            }
+            else if (tvAccessoryChoice == 2) {
+                System.out.println("Enter the quantity:");
+                int quantity = scanner.nextInt();
+                Product product = tvAccessory.getProduct(2, quantity);
+                cart.add(product);
+            }
 
             // Display cart contents
             System.out.println("Your cart:");
