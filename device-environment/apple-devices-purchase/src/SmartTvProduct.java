@@ -6,7 +6,7 @@ public class SmartTvProduct extends Product {
 
     public SmartTvProduct() {
         super("", 0, "", "smart tv", 0, new Warranty(12,"Manufacturer's warranty"), new Manufacturer("Made in China","China"));
-        products = new Product[1];
+        products = new Product[2];
         products[0] = new Product("Apple TV 4K", 114.95, "Brings Apple TV+, Apple Music, Apple Fitness+, and Apple Arcade together with all your favorite streaming apps — in our best‑ever picture and audio quality.", "smart tv", 0, defaultWarranty, apple) {
             @Override
             public String displayProducts() {
@@ -21,7 +21,7 @@ public class SmartTvProduct extends Product {
         products[1] = new Product("Apple TV 4K, first gen", 67.25 , "Brings Apple TV+, Apple Music, Apple Fitness+, and Apple Arcade together with all your favorite streaming apps.", "smart tv", 0, defaultWarranty, apple) {
             @Override
             public String displayProducts() {
-                return "2. Apple TV 4K, first gen - $667.25";
+                return "2. Apple TV 4K, first gen - $67.25";
             }
 
             @Override

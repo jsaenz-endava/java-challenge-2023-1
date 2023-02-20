@@ -1,31 +1,34 @@
 public class SmartWatchProduct extends Product {
     private Product[] products;
 
+    Warranty defaultWarranty = new Warranty(12,"Manufacturer's warranty");
+    Manufacturer apple = new Manufacturer("Apple Inc.","Cupertino, CA");
+
     public SmartWatchProduct() {
-        super("", 0, "", "smartwatch", 0);
-        products = new Product[1];
-        products[0] = new Product("Apple TV 4K", 114.95, "Brings Apple TV+, Apple Music, Apple Fitness+, and Apple Arcade together with all your favorite streaming apps — in our best‑ever picture and audio quality.", "smartwatch", 0) {
+        super("", 0, "", "smartwatch", 0, new Warranty(12,"Manufacturer's warranty"), new Manufacturer("Made in China","China"));
+        products = new Product[2];
+        products[0] = new Product("Apple Watch SE", 249, "Feature packed, and now it’s a better value than ever.", "smartwatch", 0, defaultWarranty, apple) {
             @Override
             public String displayProducts() {
-                return "1. Apple TV 4K - $114.95";
+                return "1. Apple Watch SE - $249";
             }
 
             @Override
             public Product getProduct(int choice, int quantity) {
-                return new Product(this.getName(), this.getPrice(), this.getDescription(), this.getCategory(), quantity);
+                return new Product(this.getName(), this.getPrice(), this.getDescription(), this.getCategory(), quantity, this.getWarranty(), this.getManufacturer());
             }
         };
-//        products[1] = new Product("Samsung Galaxy S21", 699.99, "A powerful Android phone with great camera and 120Hz display", "smartphone", 0) {
-//            @Override
-//            public String displayProducts() {
-//                return "2. Samsung Galaxy S21 - $699.99";
-//            }
-//
-//            @Override
-//            public Product getProduct(int choice, int quantity) {
-//                return new Product(this.getName(), this.getPrice(), this.getDescription(), this.getCategory(), quantity);
-//            }
-//        };
+        products[1] = new Product("Apple Watch Series 8", 399, "Your essential companion is now even more powerful.", "smartwatch", 0, defaultWarranty, apple) {
+            @Override
+            public String displayProducts() {
+                return "2. Apple Watch Series 8 - $399";
+            }
+
+            @Override
+            public Product getProduct(int choice, int quantity) {
+                return new Product(this.getName(), this.getPrice(), this.getDescription(), this.getCategory(), quantity, this.getWarranty(), this.getManufacturer());
+            }
+        };
     }
 
     public String displayProducts() {

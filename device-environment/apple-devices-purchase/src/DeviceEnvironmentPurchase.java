@@ -48,7 +48,7 @@ public class DeviceEnvironmentPurchase {
             }
         } else if (category == 3) {
             SmartTvProduct tvAccessory = new SmartTvProduct();
-            System.out.println( tvAccessory.displayProducts());
+            System.out.println(tvAccessory.displayProducts());
             int tvAccessoryChoice = scanner.nextInt();
             if (tvAccessoryChoice == 1) {
                 System.out.println("Enter the quantity:");

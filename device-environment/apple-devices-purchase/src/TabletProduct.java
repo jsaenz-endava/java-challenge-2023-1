@@ -6,7 +6,7 @@ public class TabletProduct extends Product {
 
     public TabletProduct() {
         super("", 0, "", "tablet", 0, new Warranty(12,"Manufacturer's warranty"), new Manufacturer("Made in China","China"));
-        products = new Product[1];
+        products = new Product[2];
         products[0] = new Product("iPad Pro 11''", 799, "The ultimate iPad experience with the most advanced technology.", "tablet", 0, defaultWarranty, apple) {
             @Override
             public String displayProducts() {
