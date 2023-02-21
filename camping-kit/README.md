@@ -7,7 +7,7 @@ This time, I'll show you the implementation of a _shopping cart_ based in the De
 
 This is the **UML Class Diagram** for this use-case:
 
-![UML Class Diagram](./resources/UML Challenge.jpg)
+<img alt="UML Class Diagram" height="500" src="./resources/UML Challenge.jpg" width="500"/>
 
 
 ----
