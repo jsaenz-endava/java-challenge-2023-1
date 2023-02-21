@@ -27,7 +27,7 @@ public class Product {
                 "Referencia: " + reference + "\n" +
                 "Marca: " + brand + "\n" +
                 "Talla: " + size + "\n" +
-                "Categoria" + category + "\n" +
+                "Categoria: " + category + "\n" +
                 "Puntuacion: " + score + "\n" +
                 "Descripcion: " + description + "\n" +
                 "Precio: " + price + " }\n";
