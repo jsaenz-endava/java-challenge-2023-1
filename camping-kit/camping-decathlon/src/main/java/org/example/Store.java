@@ -13,8 +13,8 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Store {
-    ArrayList<Product> products;
-    ShoppingCart shoppingCart = new ShoppingCart(new HashMap<>());
+    private ArrayList<Product> products;
+    private ShoppingCart shoppingCart = new ShoppingCart(new HashMap<>());
 
     public void showShop() {
         loadProducts();
