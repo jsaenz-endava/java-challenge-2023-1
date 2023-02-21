@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Carpa para 3 personas gris, quechua - mh100",
+    "reference": "8553542",
+    "brand": "QUECHUA",
+    "category": "tents",
+    "price": 324000,
+    "score": 4.8,
+    "size": "No size",
+    "description": "Hemos ecodiseñado esta carpa para 3 personas, sencilla, impermeable y facil de montar. Disfruta de un camping con Quechua."
+  },
+  {
+    "name": "Carpa domo - 1 plaza - trekking - mt900",
+    "reference": "8545744",
+    "brand": "FORCLAZ",
+    "category": "tents",
+    "price": 890000,
+    "score": 4.9,
+    "size": "No size",
+    "description": "Esta carpa con semi-autofijación 3 estaciones (condiciones meteorológicas de primavera, verano y otoño). Ultra compacta y liviana."
+  },
+  {
+    "name": "Carpa familiar para acampar impermeable, quechua arpenaz 4.1 para 4 personas",
+    "reference": "8378237",
+    "brand": "QUECHUA",
+    "category": "tents",
+    "price": 684000,
+    "score": 4.4,
+    "size": "No size",
+    "description": "Nuestros diseñadores campistas diseñaron la carpa con varillas Arpenaz 4.1 para 4 campistas que quieren 1 habitación y un área común espaciosos."
+  },
+  {
+    "name": "Manta térmica de montaña y trekking, forclaz, reutilizable",
+    "reference": "8572289",
+    "brand": "FORCLAZ",
+    "category": "thermal insulation",
+    "price": 38000,
+    "score": 4.5,
+    "size": "No size",
+    "description": "Nuestro equipo ha seleccionado esta manta de supervivencia reutilizable para protegerse del frío o del calor en caso necesario."
+  },
+  {
+    "name": "Manta térmica de montaña y trekking, forclaz, un sólo uso",
+    "reference": "8572360",
+    "brand": "FORCLAZ",
+    "category": "thermal insulation",
+    "price": 14000,
+    "score": 4.2,
+    "size": "No size",
+    "description": "Nuestro equipo seleccionó este morral de supervivencia de un solo uso para protegerse del frío o del calor en caso necesario."
+  },
+  {
+    "name": "Sleeping para camping - arpenaz 10°",
+    "reference": "8737675",
+    "brand": "QUECHUA",
+    "category": "sleeping bags",
+    "price": 207000,
+    "score": 4.4,
+    "size": "No size",
+    "description": "Nuestros diseñadores campistas han ecodiseñado el sleeping Arpenaz 10° para dormir cómodamente en camping con una temperatura de aprox. 10 °C"
+  },
+  {
+    "name": "Sleeping para camping, 0° de algodón, quechua, rojo con gris",
+    "reference": "8492458",
+    "brand": "QUECHUA",
+    "category": "sleeping bags",
+    "price": 548000,
+    "score": 4.4,
+    "size": "No size",
+    "description": "Nuestros diseñadores campistas desarrollaron el sleeping Arpenaz 0° Algodón para dormir cómodamente en camping con una temperatura de aprox. 0 °C."
+  },
+  {
+    "name": "Lona piso impermeable 2 x 2,5 metros para carpa camping",
+    "reference": "1163704",
+    "brand": "QUECHUA",
+    "category": "tarps",
+    "price": 85000,
+    "score": 4.4,
+    "size": "No size",
+    "description": "Nuestros diseñadores campistas han desarrollado esta lona piso para crear un espacio aislado de la humedad del suelo. Se usa como protección adicional."
+  },
+  {
+    "name": "Lona suelo camping quechua impermeable 3x4 metros negro",
+    "reference": "2855045",
+    "brand": "QUECHUA",
+    "category": "tarps",
+    "price": 127000,
+    "score": 4.1,
+    "size": "No size",
+    "description": "Nuestro equipo de campistas diseñó este piso para crear un espacio aislado de la humedad del suelo. Se usa como protección adicional."
+  },
+  {
+    "name": "Lámpara camping, quechua, bl100, 100 lúmenes ipx4, pilas incluidas",
+    "reference": "8492468",
+    "brand": "QUECHUA",
+    "category": "supplies",
+    "price": 68000,
+    "score": 4.3,
+    "size": "No size",
+    "description": "Nuestros diseñadores campistas ha desarrollado la lámpara BL100 para iluminar cómodamente a 2 personas. Uso exterior y en la carpa, en camping y al aire libre."
+  },
+  {
+    "name": "Nevera de camping flexible 20 litros quechua conservación de alimentos 9h",
+    "reference": "8676217",
+    "brand": "QUECHUA",
+    "category": "supplies",
+    "price": 138000,
+    "score": 4.3,
+    "size": "No size",
+    "description": "Nuestros diseñadores campistas han ecodiseñado esta nevera Compact 20 L, flexible y resistente, para conservar bebidas y alimentos frescos durante media jornada."
+  },
+  {
+    "name": "Silla para camping plegable quechua azul",
+    "reference": "8576904",
+    "brand": "QUECHUA",
+    "category": "supplies",
+    "price": 96000,
+    "score": 4.5,
+    "size": "No size",
+    "description": "Nuestro equipo de practicantes concibió esta silla Basic, plegable y compacta, para sentarse cómodamente en el emplazamiento de camping."
+  }
+]
