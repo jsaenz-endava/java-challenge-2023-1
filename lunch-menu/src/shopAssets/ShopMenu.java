@@ -390,7 +390,7 @@ public abstract class ShopMenu {
 		return CART;
 	}
 	
-	public static void separator() {
+	private static void separator() {
 		System.out.print("\n\n");
 		for (int i=0; i<60; i++){
 		    System.out.print(" -");
