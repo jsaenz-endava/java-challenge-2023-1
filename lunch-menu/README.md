@@ -1,4 +1,4 @@
-# Sr. Wok's Lunch Menu
+# Sr. Wok's Lunch Menu 🍱
 
 Hello dear reader.
 
@@ -18,7 +18,7 @@ space (i.e: `1 2 3`).
 This program is based on the Rappi's Sr. Wok store, the prices were created 
 accordingly and the language is spanish for the UI.
 
-v1.0.0.
+v1.0.1.
 
 ```mermaid
 classDiagram
