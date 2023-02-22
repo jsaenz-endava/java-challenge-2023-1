@@ -4,17 +4,16 @@ public class Drink extends Product {
 	
 	private String brand;
 	private int volume;
-	private final static String DRINKS_MENU = "DrinksMenu.txt";
 	
 	public Drink(int itemID) {
 		switch(itemID) {
 			case 1:
-				this.brand = "Mr Tea Limón";
+				this.brand = "Mr. Tea Limón";
 				this.volume = 400;
 				super.setPrice(5500);
 				break;
 			case 2:
-				this.brand = "Mr Tea Durazno";
+				this.brand = "Mr. Tea Durazno";
 				this.volume = 400;
 				super.setPrice(5200);
 				break;
@@ -69,7 +68,14 @@ public class Drink extends Product {
 				super.setPrice(5500);
 				break;
 		}
-		super.setName(this.brand + " " +Integer.toString(this.volume)+" ml");
+		setName();
+	}
+	
+	private void setName() {
+		super.setName(
+				getBrand()
+				+ " " + Integer.toString(getVolume())
+				+ " ml");
 	}
 	
 	public String getBrand() {
@@ -79,9 +85,4 @@ public class Drink extends Product {
 	public int getVolume() {
 		return volume;
 	}
-	
-	public static void printMenu() {
-		Product.printMenu(DRINKS_MENU);
-	}
-
 }

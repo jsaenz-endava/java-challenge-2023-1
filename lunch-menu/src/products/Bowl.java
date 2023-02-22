@@ -7,7 +7,6 @@ public class Bowl extends Product {
 	private String size;
 	private Base bowlBase;
 	private ArrayList<Protein> bowlProteins = new ArrayList<Protein>();
-	private final static String BOWLS_MENU = "BowlsMenu.txt";
 
 	public Bowl(int bowlBaseID, int bowlProteinID) {
 		this.size = "Pequeño";
@@ -35,22 +34,22 @@ public class Bowl extends Product {
 	}
 	
 	private void setName() {
-		String name = "Bowl " + this.size + " con: " + this.bowlBase.getName();
-		for(int i = 0; i < this.bowlProteins.size() - 1; i++) {
+		String name = "Bowl " + getSize() + " con: " + getBowlBase().getName();
+		for(int i = 0; i <= getBowlProteins().size() - 1; i++) {
 			
-			if (i == this.bowlProteins.size() - 1) {
-				name += " y " + this.bowlProteins.get(i).getName();
+			if (i == getBowlProteins().size() - 1) {
+				name += " y " + getBowlProteins().get(i).getName();
 	        }
 			else {
-				name += ", " + this.bowlProteins.get(i).getName();
+				name += ", " + getBowlProteins().get(i).getName();
 			}
 		}
 		super.setName(name);
 	}
 	
 	private void setPrice() {
-		int extraPrice = this.bowlBase.getExtraPrice();
-		for(Protein bowlProtein : this.bowlProteins ) {
+		int extraPrice = getBowlBase().getExtraPrice();
+		for(Protein bowlProtein : getBowlProteins() ) {
 			extraPrice += bowlProtein.getExtraPrice();
 		}
 		switch (this.size) {
@@ -80,9 +79,4 @@ public class Bowl extends Product {
 	public ArrayList<Protein> getBowlProteins() {
 		return bowlProteins;
 	}
-
-	public static void printMenu() {
-		Product.printMenu(BOWLS_MENU);
-	}
-
 }

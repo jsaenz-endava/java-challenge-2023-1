@@ -5,7 +5,6 @@ public class SushiBites extends Product {
 	private String sushiType;
 	private int numberOfBites;
 	private boolean withChopsticks;
-	private final static String SUSHI_MENU = "SushiMenu.txt";
 
 	public SushiBites(int itemID, int numberOfBites, boolean withChopsticks) {
 		this.numberOfBites = numberOfBites;
@@ -40,8 +39,20 @@ public class SushiBites extends Product {
 				super.setPrice(roundTo100(12900*multiplier));
 				break;	
 		}
-		
-		super.setName(this.sushiType+" x" +Integer.toString(this.numberOfBites)+ " Bocados");
+		setName();
+	}
+	
+	private void setName() {
+		String name =  getSushiType()
+				+ " x" + Integer.toString(getNumberOfBites())
+				+ " Bocados";
+		if(isWithChopsticks()) {
+			name += " (con palillos)";
+		}
+		else {
+			name += " (sin palillos)";
+		}
+		super.setName(name);
 	}
 	
 	public String getSushiType() {
@@ -55,10 +66,8 @@ public class SushiBites extends Product {
 	public boolean isWithChopsticks() {
 		return withChopsticks;
 	}
+
 	private int roundTo100(float initialValue) {
 		return (int) Math.round(initialValue/100.0) * 100;
-	}
-	public static void printMenu() {
-		Product.printMenu(SUSHI_MENU);
 	}
 }

@@ -17,4 +17,5 @@ public abstract class Tops {
 	protected void setExtraPrice(int extraPrice) {
 		this.extraPrice = extraPrice;
 	}
+	
 }

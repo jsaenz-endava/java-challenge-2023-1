@@ -1,20 +1,47 @@
 package shopAssets;
 
+import java.io.IOException;
 import java.io.PrintStream;
-import java.io.UnsupportedEncodingException;
-import products.Bowl;
 
 public class MainShop {
-
-	public static void main(String[] args) throws UnsupportedEncodingException {
-		System.setOut(new PrintStream(System.out, true, "UTF-8"));
-		System.out.print("\033[H\033[2J");  
-		System.out.flush();  
-		Bowl myBowl = new Bowl(1,13,13,13);
-		System.out.println(myBowl.getName());
-		System.out.println(myBowl.getPrice());
 	
-
+	public final static String MAIN = "Main";
+	public final static String BOWLS = "Bowls";
+	public final static String PAYMENT = "Payment";
+    public final static String SUSHI =  "Sushi";
+	
+	public static void main(String[] args) throws IOException {
+		System.setOut(new PrintStream(System.out, true, "UTF-8"));
+		boolean activeSession = true;
+		User currentUser = ShopMenu.loginMenu();
+		String nextSection = ShopMenu.MAIN;
+		ShoppingCart currentShoppingCart = new ShoppingCart(currentUser);
+		while(activeSession) {
+			switch (nextSection) {
+				case ShopMenu.MAIN:
+					nextSection = ShopMenu.mainMenu();
+					break;
+				case ShopMenu.BOWLS:
+					nextSection = ShopMenu.bowlsMenu(currentShoppingCart);
+					break;
+				case ShopMenu.SUSHI:
+					nextSection = ShopMenu.sushiMenu(currentShoppingCart);
+					break;	
+				case ShopMenu.DRINKS:
+					nextSection = ShopMenu.drinksMenu(currentShoppingCart);
+					break;	
+				case ShopMenu.CART:
+					nextSection = ShopMenu.cartMenu(currentShoppingCart);
+					break;
+				case "Payment":
+					activeSession = false;
+					System.out.print("Has pagado un total de: ");
+					System.out.println(String.format("%,d",currentShoppingCart.getTotal()));
+					break;
+				default:
+					ShopMenu.mainMenu();
+					break;
+			}
+		}	
 	}
-
 }

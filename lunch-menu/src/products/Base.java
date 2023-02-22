@@ -1,6 +1,7 @@
 package products;
 
 public class Base extends Tops {
+	
 	public Base(int itemID) {
 		switch (itemID){
 			case 1:
@@ -25,4 +26,5 @@ public class Base extends Tops {
 				break;
 		}		
 	}
+	
 }
