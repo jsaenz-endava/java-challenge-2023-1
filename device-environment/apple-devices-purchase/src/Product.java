@@ -1,12 +1,4 @@
 public class Product {
-    // Esto podría ser una interfaz
-//    public interface ProductCategory {
-//        String getName();
-//        String getCategory();
-//        double getPrice();
-//        String getDescription();
-//        Product getProduct(int choice, int quantity);
-//    }
     private String name;
     private double price;
     private String description;
@@ -63,10 +55,6 @@ public class Product {
 
     public void setManufacturer(Manufacturer manufacturer) {
         this.manufacturer = manufacturer;
-    }
-
-    public String toString() {
-        return name + " (" + category + "): $" + price + " x " + quantity + " = $" + price * quantity + " - " + description;
     }
 
     public String displayProducts(){

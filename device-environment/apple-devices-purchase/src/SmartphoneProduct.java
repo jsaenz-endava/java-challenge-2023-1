@@ -7,10 +7,10 @@ class SmartphoneProduct extends Product {
     public SmartphoneProduct() {
         super("", 0, "", "smartphone", 0, new Warranty(12,"Manufacturer's warranty"), new Manufacturer("Made in China","China"));
         products = new Product[2];
-        products[0] = new Product("iPhone 13", 799.99, "The latest iPhone with A15 Bionic chip and Ceramic Shield", "smartphone", 0, defaultWarranty, apple) {
+        products[0] = new Product("iPhone 14", 799.99, "The latest iPhone with A15 Bionic chip and Ceramic Shield", "smartphone", 0, defaultWarranty, apple) {
             @Override
             public String displayProducts() {
-                return "1. iPhone 13 - $799.99";
+                return "1. iPhone 14 - $799.99";
             }
 
             @Override
@@ -18,10 +18,10 @@ class SmartphoneProduct extends Product {
                 return new Product(this.getName(), this.getPrice(), this.getDescription(), this.getCategory(), quantity, this.getWarranty(), this.getManufacturer());
             }
         };
-        products[1] = new Product("Samsung Galaxy S21", 699.99, "A powerful Android phone with great camera and 120Hz display", "smartphone", 0, defaultWarranty, apple) {
+        products[1] = new Product("iPhone 14 Pro", 1000, "The ultimate iPhone! Discover the new dynamic island", "smartphone", 0, defaultWarranty, apple) {
             @Override
             public String displayProducts() {
-                return "2. Samsung Galaxy S21 - $699.99";
+                return "2. iPhone 14 Pro - $1000";
             }
 
             @Override
